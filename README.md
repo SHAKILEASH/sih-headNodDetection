@@ -7,7 +7,8 @@ The ideology behind the detector is as follows:
   * Detect the faces
   * Calculate the center of face
   * Capture the movement of the face center
+  * For capturing the face center movement, Lucas Canade Optical Flow concept is used
 # OpenCV Methods
   * Face Detection - detectMultiScale()
   * Face center movement - calcOpticalFlowPyrLK()
-  For capturing the face center movement, Lucas Canade Optical Flow concept is used.
+  
