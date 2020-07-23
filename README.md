@@ -11,4 +11,6 @@ The ideology behind the detector is as follows:
 # OpenCV Methods
   * Face Detection - detectMultiScale()
   * Face center movement - calcOpticalFlowPyrLK()
-  
+# Requirements
+ * Python
+ * OpenCV library 
