@@ -13,4 +13,4 @@ The ideology behind the detector is as follows:
   * Face center movement - calcOpticalFlowPyrLK()
 # Requirements
  * Python
- * OpenCV library 
+ * OpenCV library - pip install opencv-python
