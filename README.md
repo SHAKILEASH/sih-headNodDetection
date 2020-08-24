@@ -27,8 +27,8 @@ The algorithm that we have used to detect the gesture is Lucas - Kanade optical 
      It works for moderate object speeds.
 * The Lucas-Kanade optical flow algorithm is a simple technique which can provide an estimate of the **movement of interesting features in successive images** of a scene.
 * We would like to associate a movement vector (u, v) to every such ”interesting” pixel in the scene, obtained by **comparing** the two consecutive images. 
-* It works by trying to guess in which direction an object has moved so that local changes in intensity can be explained.
-![optical flow](https://docs.opencv.org/3.4/optical_flow_basic1.jpg)
+* It works by trying to guess in which direction an object has moved so that local changes in intensity can be explained.<br />
+![optical flow](https://docs.opencv.org/3.4/optical_flow_basic1.jpg)<br />
 Optical flow works on several assumptions:
 * The **pixel intensities** of an object **do not change** between consecutive frames.
 * **Neighbouring** pixels have **similar** motion.
