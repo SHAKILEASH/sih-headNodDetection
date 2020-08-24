@@ -21,9 +21,25 @@ The ideology behind the detector is as follows:
 ## OpenCV Methods
   * Face Detection - detectMultiScale()
   * Face center movement - calcOpticalFlowPyrLK()
+## Lucas-Kanade algorithm
+The algorithm that we have used to detect the gesture is Lucas - Kanade optical flow.
+     The Lucas-Kanade algorithm is an **efficient method** for obtaining optical flow information at interesting points in an image (i.e. those exhibiting enough intensity gradient information). 
+     It works for moderate object speeds.
+* The Lucas-Kanade optical flow algorithm is a simple technique which can provide an estimate of the **movement of interesting features in successive images** of a scene.
+* We would like to associate a movement vector (u, v) to every such ”interesting” pixel in the scene, obtained by **comparing** the two consecutive images. 
+* It works by trying to guess in which direction an object has moved so that local changes in intensity can be explained.
+![optical flow](https://docs.opencv.org/3.4/optical_flow_basic1.jpg)
+Optical flow works on several assumptions:
+* The **pixel intensities** of an object **do not change** between consecutive frames.
+* **Neighbouring** pixels have **similar** motion.
+
+The Lucas-Kanade algorithm makes a **”best guess”** of the displacement of a neighborhood by looking at changes in pixel intensity which can be explained from the known intensity gradients of the image in that neighborhood. 
+For a simple pixel we have two unknowns (u and v) and one equation (that is, the system is underdetermined). We need a neighborhood in order to get more equations. 
+Doing so makes the system overdetermined and we have to find a least squares solution. The LSQ solution averages the optical flow guesses over a neighborhood.
 ## Requirements
- * Python
- * OpenCV library - **pip install opencv-python**
+ * OpenCV  (Open source Computer Vision) library for image processing
+ * NumPy Package for handling array data
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
